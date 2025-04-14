@@ -25,7 +25,6 @@ public class CatSpellController {
         String catFact = spellService.getCatFact();
         model.addAttribute("spell", translated);
         model.addAttribute("catFact", catFact);
-        model.addAttribute("meow", translated.length() > 60 ? "angry" : "happy");
         return "index";
     }
 }
